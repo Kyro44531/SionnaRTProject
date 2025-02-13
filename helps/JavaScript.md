@@ -42,14 +42,15 @@
 
 ### **4. 数组/列表**
 
-| JavaScript                     | Python                        |
-|---------------------------------|-------------------------------|
-| `let arr = [1, 2, 3];`          | `arr = [1, 2, 3]`             |
-| `arr.push(4);`                  | `arr.append(4)`               |
-| `arr.pop();`                    | `arr.pop()`                   |
-| `arr.length`                    | `len(arr)`                    |
-| `arr.slice(1, 3)`               | `arr[1:3]`                    |
-| `arr.filter(item => ...)`       | `[item for item in arr if ...]` |
+| JavaScript                | Python                          |
+|---------------------------|---------------------------------|
+| `let arr = [1, 2, 3];`    | `arr = [1, 2, 3]`               |
+| `arr.push(4);`            | `arr.append(4)`                 |
+| `arr.unshift(4)`          | `arr.insert(0, 4) `             |
+| `arr.pop();`              | `arr.pop()`                     |
+| `arr.length`              | `len(arr)`                      |
+| `arr.slice(1, 3)`         | `arr[1:3]`                      |
+| `arr.filter(item => ...)` | `[item for item in arr if ...]` |
 
 - **数组操作**：JavaScript 和 Python 在数组操作上非常相似，Python 使用列表（list），而 JavaScript 使用数组（array）。
 
