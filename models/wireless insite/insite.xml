@@ -25,8 +25,10 @@
 			<rgb value="0.219526 0.219526 0.254152" name="reflectance"/>
 		</bsdf>
 	</bsdf>
-	<bsdf type="diffuse" id="mat-itu_wood">
-		<rgb value="0.509804 0.167376 0.059954" name="reflectance"/>
+	<bsdf type="twosided" id="mat-itu_wood">
+		<bsdf type="diffuse">
+			<rgb value="0.509804 0.167376 0.059954" name="reflectance"/>
+		</bsdf>
 	</bsdf>
 
 <!-- Emitters -->
@@ -54,11 +56,6 @@
 	</shape>
 	<shape type="ply" id="mesh-allwall">
 		<string name="filename" value="allWall.ply"/>
-		<boolean name="face_normals" value="true"/>
-		<ref id="mat-itu_concrete" name="bsdf"/>
-	</shape>
-	<shape type="ply" id="mesh-blockm57">
-		<string name="filename" value="blockm57.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_concrete" name="bsdf"/>
 	</shape>

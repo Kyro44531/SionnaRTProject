@@ -38,17 +38,17 @@
 <!-- Shapes -->
 
 	<shape type="ply" id="mesh-cardoor">
-		<string name="filename" value="cardoor.ply"/>
+		<string name="filename" value="cardoor4.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_wood" name="bsdf"/>
-	</shape>
-	<shape type="ply" id="mesh-carwindow">
-		<string name="filename" value="carwindow.ply"/>
+	</shape>	
+    <shape type="ply" id="mesh-carwindow">
+		<string name="filename" value="carwindow4.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_glass" name="bsdf"/>
 	</shape>
 	<shape type="ply" id="mesh-carlib">
-		<string name="filename" value="carlib.ply"/>
+		<string name="filename" value="carlib4.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_metal" name="bsdf"/>
 	</shape>
