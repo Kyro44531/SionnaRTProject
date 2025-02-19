@@ -5,9 +5,9 @@ load('4LoS.mat');
 cir = ifft(freq_resp_92,[],2);
 % power delay profile
 pdp = 20*log10(abs(cir));
-delay = [0:1000]./1e9;
+delay = (0:1000)./1e9;
 figure(1);
-gca = imagesc(delay.*1e9,[0:359],pdp);
+gca = imagesc(delay.*1e9,0:359,pdp);
 % set(gca,'edgecolor','none');
 colorbar;
 max_val = max(pdp(:));
@@ -29,7 +29,7 @@ for tao = delay
     % 然后过滤掉过近的，也就是和上一个相差了小于10度的，就把较小的那个给删了
     if (~isempty(power))
         for k = 1:length(power)
-            if power(k) <= -92
+            if power(k) <= -94
                 power(k) = 0;
                 angle(k) = -1;
             end
