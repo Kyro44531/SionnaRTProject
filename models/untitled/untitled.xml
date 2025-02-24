@@ -29,5 +29,5 @@
 		<string name="filename" value="meshes/room.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_concrete" name="bsdf"/>
-	</shape>
+	</shape>	
 </scene>
