@@ -30,6 +30,33 @@ I don't know
 | models | 3D模型   |
 | utils  | 原创的主程序 |
 
+## Branches · 分支介绍
+**1. feat系列**
+加入新特性/编写新代码
++ `feat/untitled1` 运行于虚拟机上的分支，调整运行ipynb代码； 所有虚拟机上的分支整合到该分支上
++ `feat/matlab` 运行于主机上的分支，调整运行MATLAB代码；所有MATLAB相关分支整合到该分支上
+feat系列根据需要选择Squash Merge或者直接Merge，一般来说commit较乱时选择Squesh Merge
+
+**2. docs系列**
+编写说明文档/上传学习笔记
++ `docs/learn` 学习笔记
++ `docs/readme` 补充readme等等
+docs系列通常使用直接merge
+
+**3. refactor系列**
+重构文件结构（暂无）
+refactor系列通常使用直接merge
+
+**4. fix系列**
+debug分支，暂无
+不直接合进master里，通常先合进feat分支中，采用Squash Merge.
+
+**5. master分支**
+所有的分支都合进master里面
+
+**6. main分支**
+不用这个，仅用于比较master分支的commit情况
+
 ## Simulation · 仿真过程
 1. 导入模型，详见`helps/model.md`
 ```python
